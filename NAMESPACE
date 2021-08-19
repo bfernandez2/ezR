@@ -3,6 +3,7 @@
 export(repath)
 export(ctrl_c)
 export(ctrl_v)
+export(get_total)
 export(seq_dates)
 export(expand_df)
 export(melt_date)

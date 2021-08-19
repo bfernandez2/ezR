@@ -45,6 +45,28 @@ ctrl_v <- function(nom = TRUE)
   return(x)
 }
 
+#' Get the total of numeric variables
+#'
+#' @param df Object of type dataframe
+#'
+#'This function calculates the total of all numerical variables, there must be at least one variable of any type other than numerical.
+#
+#' @examples
+#' get_total(iris)
+get_total = function(df) {
+
+  df = df %>% select(!is.numeric, is.numeric)
+  Total = df %>%
+    mutate(across(.cols = is.numeric, .fns = ~ sum(., na.rm = T))) %>%
+    head(1)
+  df = df %>% rbind(Total) %>%
+    mutate(across(.cols = 1, as.character))
+  df[(dim(df)[1]), 1] = "Total"
+
+  return(df)
+
+}
+
 #' Most recent file
 #'
 #'Returns the name of the most recent file in the directory

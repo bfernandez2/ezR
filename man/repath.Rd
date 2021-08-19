@@ -7,5 +7,5 @@
 repath()
 }
 \description{
-This function fixes the path of the windows files to be used in R
+This function fixes the path of the windows files to be used in R.
 }
