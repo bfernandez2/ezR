@@ -55,9 +55,9 @@ ctrl_v <- function(nom = TRUE)
 #' get_total(iris)
 get_total = function(df) {
 
-  df = df %>% select(!is.numeric, is.numeric)
+  df = df %>% select(where(~ !is.numeric(.x)), where(~ is.numeric(.x)))
   Total = df %>%
-    mutate(across(.cols = is.numeric, .fns = ~ sum(., na.rm = T))) %>%
+    mutate(across(.cols = where(~ is.numeric(.x)), .fns = ~ sum(., na.rm = T))) %>%
     head(1)
   df = df %>% rbind(Total) %>%
     mutate(across(.cols = 1, as.character))
