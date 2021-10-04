@@ -12,6 +12,7 @@ BugReports: https://github.com/bfernandez2
 Imports:
     lubridate,
     dplyr,
-    openxlsx
+    openxlsx,
+    stringi
 RoxygenNote: 7.1.1
 
