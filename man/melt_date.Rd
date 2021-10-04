@@ -19,8 +19,8 @@ melt_date(data, start, end, id)
 This function returns a data frame in long format, where the dates are completed from start to end by some id.
 }
 \examples{
-data_ejemplo = data.frame(id = c(1, 2),
+data_example = data.frame(id = c(1, 2),
 start = as.Date(c("2021-01-01", "2021-01-10")),
 end = as.Date(c("2021-01-10", "2021-01-15")))
-melt_date(data = data, start = start, end = end, id = id)
+melt_date(data = data_example, start = start, end = end, id = id)
 }

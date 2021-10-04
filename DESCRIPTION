@@ -11,6 +11,7 @@ LazyData: true
 BugReports: https://github.com/bfernandez2
 Imports:
     lubridate,
-    dplyr
+    dplyr,
+    openxlsx
 RoxygenNote: 7.1.1
 

@@ -8,4 +8,6 @@ repath()
 }
 \description{
 This function fixes the path of the windows files to be used in R.
+#' @examples
+repath() # Use this function to copy the clipboard
 }

@@ -18,5 +18,4 @@ This function returns a sequence of dates.
 seq_dates("2021-01-01","2021-01-31")
 
 seq_dates("20210101","20210131")
-
 }

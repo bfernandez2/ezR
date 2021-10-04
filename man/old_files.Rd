@@ -4,7 +4,7 @@
 \alias{old_files}
 \title{Oldest file}
 \usage{
-old_files()
+old_files(wd = NULL)
 }
 \description{
 Returns the name of the oldest file in the directory.

@@ -4,7 +4,7 @@
 \alias{recent_files}
 \title{Most recent file}
 \usage{
-recent_files()
+recent_files(wd = NULL)
 }
 \description{
 Returns the name of the most recent file in the directory
