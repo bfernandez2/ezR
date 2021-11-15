@@ -1,8 +1,8 @@
 #' Fix path
 #'
 #' This function fixes the path of the windows files to be used in R.
-#' #' @examples
-#' repath() # Use this function to copy the clipboard
+#' @examples
+#' repath()
 #' @export
 repath <- function() {
   cat('Pega el directorio y da ENTER dos veces')
@@ -266,7 +266,7 @@ style_elegant_xlsx = function(sheet, name, data) {
       border = "TopBottomLeftRight",
       borderColour = "black",
       textDecoration = "bold",
-      fontSize = 7
+      fontSize = 8
     ),
     cols = 1:ncol(data),
     rows = 1,
