@@ -2,8 +2,10 @@ Package: ezR
 Type: Package
 Title: Useful functions for R
 Version: 0.1.0
-Authors@R: person("Bastian", "Fernandez", email = "bastian.fernandez2@gmail.com", 
-  role = c("aut", "cre"))
+Authors@R: c(person("Bastian", "Fernandez", email = "bastian.fernandez2@gmail.com", 
+                    role = c("aut", "cre")),
+             person("Diego", "Rojas", role = c("cre")),
+             person("Cesar", "orozco", role = c("cre")))
 Description: Functions and shortcuts that facilitate daily database management.
 License: GPL-2
 Encoding: UTF-8
