@@ -237,7 +237,7 @@ date_R <- function(x){as.Date(as.numeric(x),origin = "1970-01-01")}
 #' @export
 date_stata <- function(x){as.Date(as.numeric(x),origin = "1960-01-01")}
 
-#' Style elegant xlsx
+#' Write in xlsx with format
 #'
 #' This function expands a dataframe to a desired dimension.
 #
