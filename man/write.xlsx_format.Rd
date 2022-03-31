@@ -14,7 +14,7 @@ style_elegant_xlsx(sheet, name, data)
 \item{data}{Database name}
 }
 \description{
-This function expands a dataframe to a desired dimension.
+Write an excel file with format.
 }
 \examples{
 write.xlsx_format("example","iris.xlsx",iris)
