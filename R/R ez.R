@@ -245,9 +245,9 @@ date_stata <- function(x){as.Date(as.numeric(x),origin = "1960-01-01")}
 #' @param name file name
 #' @param data Database name
 #' @examples
-#' style_elegant_xlsx("example","iris.xlsx",iris)
+#' write.xlsx_format("example","iris.xlsx",iris)
 #' @export
-style_elegant_xlsx = function(sheet, name, data) {
+write.xlsx_format = function(sheet, name, data) {
   wb = createWorkbook()
   addWorksheet(wb, sheet)
   bold.style <- createStyle(textDecoration = "Bold")
@@ -257,7 +257,7 @@ style_elegant_xlsx = function(sheet, name, data) {
     wb,
     sheet,
     createStyle(
-      fgFill = "#0c217e",
+      fgFill = "#ff0000",
       fontColour = "#FFFFFF",
       wrapText = T,
       valign = "center",
@@ -266,7 +266,7 @@ style_elegant_xlsx = function(sheet, name, data) {
       border = "TopBottomLeftRight",
       borderColour = "black",
       textDecoration = "bold",
-      fontSize = 8
+      fontSize = 11
     ),
     cols = 1:ncol(data),
     rows = 1,
